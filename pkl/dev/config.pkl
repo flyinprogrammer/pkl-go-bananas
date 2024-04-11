@@ -1,0 +1,17 @@
+amends ".../AppConfig.pkl"
+
+computers {
+  new {
+    ipAddress {
+      "192.168.0.1"
+    }
+    name = "home-router"
+  }
+  new {
+    name = "printer"
+    ipAddress {
+      "192.168.0.2"
+      "10.1.0.13"
+    }
+  }
+}
