@@ -28,7 +28,7 @@ func setupLocalConfigFile() (configFilePath string) {
 		log.Fatalf("Error getting user config directory: %v", err)
 	}
 
-	cliCfgDirPath := filepath.Join(cfgDir, "pkl-go-bananas/")
+	cliCfgDirPath := filepath.Join(cfgDir, "pkl-go-bananas") + string(filepath.Separator)
 	if _, err := os.Stat(cliCfgDirPath); os.IsNotExist(err) {
 		if err := os.MkdirAll(cliCfgDirPath, 0700); err != nil {
 			log.Fatalf("Error creating cli config dir: %v", err)
