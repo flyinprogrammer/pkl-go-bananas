@@ -1,0 +1,10 @@
+// amends ".../AppConfig.pkl"
+
+computers {
+  new {
+    ipAddress {
+      "192.168.0.17"
+    }
+    name = "my-computer"
+  }
+}
