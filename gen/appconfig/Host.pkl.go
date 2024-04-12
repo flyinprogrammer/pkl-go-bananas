@@ -1,4 +1,4 @@
-// Code generated from Pkl module `pkl_go_bananas.AppConfig`. DO NOT EDIT.
+// Code generated from Pkl module `flyinprogrammer.pkl_go_bananas.AppConfig`. DO NOT EDIT.
 package appconfig
 
 type Host struct {

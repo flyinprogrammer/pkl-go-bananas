@@ -1,10 +1,10 @@
 @go.Package { name = "github.com/flyinprogrammer/pkl-go-bananas/gen/appconfig" }
 
 @ModuleInfo { minPklVersion = "0.25.1" }
-module pkl_go_bananas.AppConfig
+module flyinprogrammer.pkl_go_bananas.AppConfig
 
-import "package://pkg.pkl-lang.org/pkl-go/pkl.golang@0.6.0#/go.pkl"
-import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.net@1.1.1#/net.pkl"
+import "@golangs/go.pkl"
+import "@nets/net.pkl"
 
 class Host {
   name: String

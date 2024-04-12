@@ -1,0 +1,22 @@
+amends "pkl:Project"
+
+package {
+  name = "flyinprogrammer.pkl_go_bananas"
+  version = read?("env:VERSION")?.replaceFirst("\(name)@", "") ?? "0.0.1-SNAPSHOT"
+  baseUri = "package://pkg.pkl-lang.org/github.com/flyinprogrammer/pkl-go-bananas/\(name)"
+  packageZipUrl = "https://github.com/flyinprogrammer/pkl-go-bananas/releases/download/\(version)/\(name)@\(version).zip"
+  license = "Apache-2.0"
+  description = "Configuration for pkl-go-bananas."
+  authors {
+    "Alan Scherger <alan.scherger@gmail.com>"
+  }
+}
+
+dependencies {
+  ["nets"] {
+    uri = "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.net@1.1.1"
+  }
+  ["golangs"] {
+    uri = "package://pkg.pkl-lang.org/pkl-go/pkl.golang@0.6.0"
+  }
+}
