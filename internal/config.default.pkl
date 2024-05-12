@@ -1,4 +1,4 @@
-// amends ".../AppConfig.pkl"
+amends "package://pkg.pkl-lang.org/github.com/flyinprogrammer/pkl-go-bananas/flyinprogrammer.pkl_go_bananas@0.0.1#/AppConfig.pkl"
 
 computers {
   new {

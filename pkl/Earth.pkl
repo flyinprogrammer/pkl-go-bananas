@@ -1,0 +1,32 @@
+@go.Package { name = "github.com/flyinprogrammer/pkl-go-bananas/gen/earth" }
+
+@ModuleInfo { minPklVersion = "0.25.1" }
+module flyinprogrammer.pkl_go_bananas.Earth
+
+import "@golangs/go.pkl"
+
+/// Something with conscience.
+abstract class Being {
+  isAlive: Boolean
+}
+
+/// A Person!
+open class Person extends Being {
+  isAlive = true
+
+  /// The person's first name
+  firstName: String
+
+  /// The person's last name
+  lastName: String
+}
+
+
+class Bug {
+  /// The name of this bug.
+  name: String
+
+  /// The owner of this bug.
+  owner: Person?
+}
+
